@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primary: hsl(245, 75%, 52%);
+	--alt: hsl(225, 100%, 94%);
+}
+
+body {
+	font-family: "Red Hat Display", sans-serif;
+	background-color: #d6e1ff;
+}
+
+.page {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.page .card {
+	background-color: hsl(225, 100%, 98%);
+	width: 500px;
+	padding: 0 30px 30px 30px;
+	border-radius: 15px;
+	display: flex;
+	margin: 20px;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+}
+.card h1 {
+	color: hsl(223, 47%, 23%);
+	margin: 30px 0;
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.card p {
+	color: hsl(224, 23%, 55%);
+	text-align: center;
+	width: 84%;
+	margin: 0 0 20px 0;
+}
+
+.card .payment {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: hsla(223, 47%, 23%, 0.171);
+	border-radius: inherit;
+	padding: 10px;
+}
+
+.payment .details {
+	display: flex;
+}
+
+.details svg {
+	margin-right: 20px;
+}
+
+.details span {
+	color: hsla(223, 47%, 23%, 0.74);
+}
+
+.details span h3 {
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+}
+
+.payment a {
+	all: unset;
+	color: var(--primary);
+	font-weight: 700;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.payment a:hover {
+	color: hsla(245, 75%, 52%, 0.747);
+	text-decoration: none;
+}
+
+.card button {
+	all: unset;
+	background-color: var(--primary);
+	margin: 10px 0;
+	width: 90%;
+	padding: 17px;
+	border-radius: inherit;
+	text-align: center;
+	color: hsl(225, 100%, 98%);
+	font-size: 15px;
+	font-weight: 900;
+	transition: 0.2s;
+	box-shadow: 0px 10px 25px -4px hsl(245, 75%, 52%);
+	margin: 20px 0px;
+	cursor: pointer;
+}
+
+.card button:hover {
+	background-color: hsla(245, 75%, 52%, 0.747);
+	box-shadow: 0px 10px 25px -4px hsla(245, 75%, 52%, 0.747);
+}
+
+.card span:last-child {
+	color: hsla(223, 47%, 23%, 0.74);
+	font-weight: 900;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.card span:last-child:hover {
+	color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 510px) {
+	.card {
+		width: 450px !important;
+	}
+}
