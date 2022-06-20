@@ -34,7 +34,6 @@ body {
 	align-items: center;
 	flex-direction: column;
 	overflow: hidden;
-	margin-bottom: 30px;
 }
 .card h1 {
 	color: hsl(223, 47%, 23%);
